@@ -11,7 +11,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(description='manual to this script')
-    parser.add_argument('--epoch', type=int, default=20)
+    parser.add_argument('--epoch', type=int, default=2)
     parser.add_argument('--lr', type=float, default=0.0001)
     parser.add_argument('--drop', type=float, default=0.)
     parser.add_argument('--batch', type=int, default=128)
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('--position', type=str, default='wrist')
     parser.add_argument('--feature', type=str, default='diff')
     parser.add_argument('--modelname', type=str, default='cnn')
-    parser.add_argument('--optimizer', type=str, default='SGD')
+    parser.add_argument('--optimizer', type=str, default='Adam')
     parser.add_argument('--gpu', type=int, default=0)
     parser.add_argument('--adjustlr', type=int, default=1)
     parser.add_argument('--normalize', type=int, default=1)
